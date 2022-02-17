@@ -11,7 +11,7 @@ export const itemListReducer = (state = { items: [] }, action) => {
     case ITEM_LIST_SUCCESS:
       return {
         loading: false,
-        items: action.payload.items
+        items: action.payload
       }
     case ITEM_LIST_FAIL:
       return { loading: false, error: action.payload }
